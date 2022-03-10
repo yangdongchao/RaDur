@@ -1,0 +1,216 @@
+[2022-03-03 18:03:14] Storing files in /apdcephfs/share_1316500/donchaoyang/code2/exp_radur/Du_FocalLoss065_gamma2/RaDur_fusion/2022-03-03_18-03-03_243ab12e9ad911ecb8c9d5e7986bee62
+[2022-03-03 18:03:14] CDur_path: /apdcephfs/share_1316500/donchaoyang/code2/exp_radur/CDur_CNN_mul_scale_fusion/2022-02-22_12-08-02_26f5aa4a939511ecbf12bb17fd9cfbc0/run_model_18_loss=-0.0321.pt
+[2022-03-03 18:03:14] CDur_pretrain: true
+[2022-03-03 18:03:14] alpha_ct: 0.0
+[2022-03-03 18:03:14] alpha_st: 1
+[2022-03-03 18:03:14] att_pool: true
+[2022-03-03 18:03:14] batch_size: 64
+[2022-03-03 18:03:14] cttc_threshold: 0.3
+[2022-03-03 18:03:14] cv_data: /apdcephfs/share_1316500/donchaoyang/code2/data/feature_tsd/validate_add_neg_final.h5
+[2022-03-03 18:03:14] data_args:
+[2022-03-03 18:03:14]   mode: stratified
+[2022-03-03 18:03:14] dtc_threshold: 0.7
+[2022-03-03 18:03:14] early_stop: 4
+[2022-03-03 18:03:14] encoder_path: /apdcephfs/share_1316500/donchaoyang/code2/data/pre_train_model/ft_local/CNN14_emb128_mAP=0.412.pth
+[2022-03-03 18:03:14] enhancement: true
+[2022-03-03 18:03:14] epochs: 100
+[2022-03-03 18:03:14] experiment_description: LOSS IS BCE,MODEL IS CDur_CNN_mul_scale_fusion
+[2022-03-03 18:03:14] gtc_threshold: 0.7
+[2022-03-03 18:03:14] label: /apdcephfs/share_1316500/donchaoyang/code2/data/choose_class/strong_and_weakly_eval_psds.tsv
+[2022-03-03 18:03:14] loss_ce: CELoss
+[2022-03-03 18:03:14] loss_sed: Du_FocalLoss065_gamma2
+[2022-03-03 18:03:14] max_efpr: 100
+[2022-03-03 18:03:14] metadata: /apdcephfs/share_1316500/donchaoyang/code2/data/choose_class/mata_eval_choose.tsv
+[2022-03-03 18:03:14] model: RaDur_fusion
+[2022-03-03 18:03:14] model_args:
+[2022-03-03 18:03:14]   temppool: linear
+[2022-03-03 18:03:14] num_workers: 8
+[2022-03-03 18:03:14] optimizer: AdamW
+[2022-03-03 18:03:14] optimizer_args:
+[2022-03-03 18:03:14]   lr: 0.0001
+[2022-03-03 18:03:14] outputpath: /apdcephfs/share_1316500/donchaoyang/code2/exp_radur/Du_FocalLoss065_gamma2
+[2022-03-03 18:03:14] pkl: true
+[2022-03-03 18:03:14] postprocessing: median
+[2022-03-03 18:03:14] pre_train: true
+[2022-03-03 18:03:14] s_tao: 0.4
+[2022-03-03 18:03:14] sampler: MinimumOccupancySampler
+[2022-03-03 18:03:14] save: one
+[2022-03-03 18:03:14] scale: 2
+[2022-03-03 18:03:14] scheduler_args:
+[2022-03-03 18:03:14]   factor: 0.1
+[2022-03-03 18:03:14]   patience: 3
+[2022-03-03 18:03:14] shuffle: false
+[2022-03-03 18:03:14] spk_emb_file_path: /apdcephfs/share_1316500/donchaoyang/code2/data/embeddings/spk_embed.128.txt
+[2022-03-03 18:03:14] tao: 0.5
+[2022-03-03 18:03:14] test_data: /apdcephfs/share_1316500/donchaoyang/code2/data/feature_tsd/eval_add_neg_final.h5
+[2022-03-03 18:03:14] thres: 0.5
+[2022-03-03 18:03:14] time_resolution: 125
+[2022-03-03 18:03:14] top: 2
+[2022-03-03 18:03:14] train_data: /apdcephfs/share_1316500/donchaoyang/code2/data/feature_tsd/train_add_neg_final.h5
+[2022-03-03 18:03:14] transforms:
+[2022-03-03 18:03:14] - freqmask
+[2022-03-03 18:03:14] - timemask
+[2022-03-03 18:03:14] - shift
+[2022-03-03 18:03:14] 
+[2022-03-03 18:03:14] Running on device cuda
+[2022-03-03 18:03:14] Transforms:
+[2022-03-03 18:03:14] Sequential(
+[2022-03-03 18:03:14]   (0): FreqMask()
+[2022-03-03 18:03:14]   (1): TimeMask()
+[2022-03-03 18:03:14]   (2): TimeShift()
+[2022-03-03 18:03:14] )
+[2022-03-03 18:03:14] Using Sampler {'shuffle': True}
+[2022-03-03 18:03:25] AdamW (
+[2022-03-03 18:03:25] Parameter Group 0
+[2022-03-03 18:03:25]     amsgrad: False
+[2022-03-03 18:03:25]     betas: (0.9, 0.999)
+[2022-03-03 18:03:25]     eps: 1e-08
+[2022-03-03 18:03:25]     lr: 0.0001
+[2022-03-03 18:03:25]     weight_decay: 0.01
+[2022-03-03 18:03:25] )
+[2022-03-03 18:03:25] RaDur_fusion(
+[2022-03-03 18:03:25]   (encoder): Cnn14(
+[2022-03-03 18:03:25]     (spectrogram_extractor): Spectrogram(
+[2022-03-03 18:03:25]       (stft): STFT(
+[2022-03-03 18:03:25]         (conv_real): Conv1d(1, 513, kernel_size=(1024,), stride=(320,), bias=False)
+[2022-03-03 18:03:25]         (conv_imag): Conv1d(1, 513, kernel_size=(1024,), stride=(320,), bias=False)
+[2022-03-03 18:03:25]       )
+[2022-03-03 18:03:25]     )
+[2022-03-03 18:03:25]     (logmel_extractor): LogmelFilterBank()
+[2022-03-03 18:03:25]     (spec_augmenter): SpecAugmentation(
+[2022-03-03 18:03:25]       (time_dropper): DropStripes()
+[2022-03-03 18:03:25]       (freq_dropper): DropStripes()
+[2022-03-03 18:03:25]     )
+[2022-03-03 18:03:25]     (bn0): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]     (conv_block1): ConvBlock(
+[2022-03-03 18:03:25]       (conv1): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]       (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]       (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]       (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]     )
+[2022-03-03 18:03:25]     (conv_block2): ConvBlock(
+[2022-03-03 18:03:25]       (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]       (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]       (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]       (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]     )
+[2022-03-03 18:03:25]     (conv_block3): ConvBlock(
+[2022-03-03 18:03:25]       (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]       (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]       (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]       (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]     )
+[2022-03-03 18:03:25]     (conv_block4): ConvBlock(
+[2022-03-03 18:03:25]       (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]       (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]       (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]       (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]     )
+[2022-03-03 18:03:25]     (conv_block5): ConvBlock(
+[2022-03-03 18:03:25]       (conv1): Conv2d(512, 1024, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]       (conv2): Conv2d(1024, 1024, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]       (bn1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]       (bn2): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]     )
+[2022-03-03 18:03:25]     (conv_block6): ConvBlock(
+[2022-03-03 18:03:25]       (conv1): Conv2d(1024, 2048, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]       (conv2): Conv2d(2048, 2048, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]       (bn1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]       (bn2): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]     )
+[2022-03-03 18:03:25]     (fc1): Linear(in_features=2048, out_features=128, bias=True)
+[2022-03-03 18:03:25]     (fc_audioset): Linear(in_features=128, out_features=527, bias=True)
+[2022-03-03 18:03:25]   )
+[2022-03-03 18:03:25]   (detection): CDur_CNN_mul_scale_fusion(
+[2022-03-03 18:03:25]     (features): Cnn10_mul_scale(
+[2022-03-03 18:03:25]       (conv_block1_1): ConvBlock_GLU(
+[2022-03-03 18:03:25]         (conv1): Conv2d(1, 64, kernel_size=(1, 1), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]         (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]         (sigmoid): Sigmoid()
+[2022-03-03 18:03:25]       )
+[2022-03-03 18:03:25]       (conv_block1_2): ConvBlock_GLU(
+[2022-03-03 18:03:25]         (conv1): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]         (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]         (sigmoid): Sigmoid()
+[2022-03-03 18:03:25]       )
+[2022-03-03 18:03:25]       (conv_block1_3): ConvBlock_GLU(
+[2022-03-03 18:03:25]         (conv1): Conv2d(1, 64, kernel_size=(5, 5), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]         (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]         (sigmoid): Sigmoid()
+[2022-03-03 18:03:25]       )
+[2022-03-03 18:03:25]       (conv_block2): ConvBlock(
+[2022-03-03 18:03:25]         (conv1): Conv2d(96, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]         (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]         (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]         (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]       )
+[2022-03-03 18:03:25]       (conv_block3): ConvBlock(
+[2022-03-03 18:03:25]         (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]         (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]         (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]         (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]       )
+[2022-03-03 18:03:25]       (conv_block4): ConvBlock(
+[2022-03-03 18:03:25]         (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]         (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+[2022-03-03 18:03:25]         (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]         (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]       )
+[2022-03-03 18:03:25]       (padding): ReplicationPad2d((0, 1, 0, 1))
+[2022-03-03 18:03:25]     )
+[2022-03-03 18:03:25]     (gru): GRU(512, 512, batch_first=True, bidirectional=True)
+[2022-03-03 18:03:25]     (fc): Linear(in_features=1024, out_features=256, bias=True)
+[2022-03-03 18:03:25]     (fusion): Fusion(
+[2022-03-03 18:03:25]       (fuse_layer1): conv1d(
+[2022-03-03 18:03:25]         (conv): Conv1d(128, 1024, kernel_size=(1,), stride=(1,))
+[2022-03-03 18:03:25]         (act): ReLU()
+[2022-03-03 18:03:25]       )
+[2022-03-03 18:03:25]       (fuse_layer2): conv1d(
+[2022-03-03 18:03:25]         (conv): Conv1d(512, 1024, kernel_size=(1,), stride=(1,))
+[2022-03-03 18:03:25]         (act): ReLU()
+[2022-03-03 18:03:25]       )
+[2022-03-03 18:03:25]       (avg_pool): AvgPool1d(kernel_size=(2,), stride=(2,), padding=(0,))
+[2022-03-03 18:03:25]     )
+[2022-03-03 18:03:25]     (outputlayer): Linear(in_features=256, out_features=2, bias=True)
+[2022-03-03 18:03:25]   )
+[2022-03-03 18:03:25]   (softmax): Softmax(dim=2)
+[2022-03-03 18:03:25]   (q): Linear(in_features=128, out_features=128, bias=True)
+[2022-03-03 18:03:25]   (k): Linear(in_features=128, out_features=128, bias=True)
+[2022-03-03 18:03:25]   (q_ee): Linear(in_features=128, out_features=128, bias=True)
+[2022-03-03 18:03:25]   (k_ee): Linear(in_features=128, out_features=128, bias=True)
+[2022-03-03 18:03:25]   (bn): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+[2022-03-03 18:03:25]   (EE_fusion): Fusion(
+[2022-03-03 18:03:25]     (fuse_layer1): conv1d(
+[2022-03-03 18:03:25]       (conv): Conv1d(128, 512, kernel_size=(1,), stride=(1,))
+[2022-03-03 18:03:25]       (act): ReLU()
+[2022-03-03 18:03:25]     )
+[2022-03-03 18:03:25]     (fuse_layer2): conv1d(
+[2022-03-03 18:03:25]       (conv): Conv1d(128, 512, kernel_size=(1,), stride=(1,))
+[2022-03-03 18:03:25]       (act): ReLU()
+[2022-03-03 18:03:25]     )
+[2022-03-03 18:03:25]     (avg_pool): AvgPool1d(kernel_size=(4,), stride=(4,), padding=(0,))
+[2022-03-03 18:03:25]   )
+[2022-03-03 18:03:25] )
+[2022-03-03 18:03:25] Using 2 GPUs!
+[2022-03-03 21:31:42] Scheduling epoch 1
+[2022-03-03 21:31:44] Validation Results - Epoch : 1     Loss 0.08  Precision 0.71  Recall 0.77  Accuracy 0.89  F1 0.73 
+[2022-03-04 01:01:18] Scheduling epoch 1
+[2022-03-04 01:01:19] Validation Results - Epoch : 2     Loss 0.07  Precision 0.70  Recall 0.78  Accuracy 0.89  F1 0.74 
+[2022-03-04 04:30:16] Scheduling epoch 1
+[2022-03-04 04:30:17] Validation Results - Epoch : 3     Loss 0.07  Precision 0.71  Recall 0.78  Accuracy 0.89  F1 0.74 
+[2022-03-04 07:58:38] Scheduling epoch 1
+[2022-03-04 07:58:40] Validation Results - Epoch : 4     Loss 0.07  Precision 0.70  Recall 0.79  Accuracy 0.89  F1 0.74 
+[2022-03-04 11:27:05] Scheduling epoch 1
+[2022-03-04 11:27:07] Validation Results - Epoch : 5     Loss 0.07  Precision 0.70  Recall 0.80  Accuracy 0.89  F1 0.75 
+[2022-03-04 14:55:18] Scheduling epoch 1
+[2022-03-04 14:55:19] Validation Results - Epoch : 6     Loss 0.07  Precision 0.71  Recall 0.79  Accuracy 0.89  F1 0.75 
+[2022-03-04 18:23:24] Scheduling epoch 1
+[2022-03-04 18:23:25] Validation Results - Epoch : 7     Loss 0.07  Precision 0.71  Recall 0.80  Accuracy 0.89  F1 0.75 
+[2022-03-04 21:51:36] Scheduling epoch 1
+[2022-03-04 21:51:36] Validation Results - Epoch : 8     Loss 0.07  Precision 0.71  Recall 0.79  Accuracy 0.89  F1 0.75 
+[2022-03-05 01:19:37] Scheduling epoch 1
+[2022-03-05 01:19:37] Validation Results - Epoch : 9     Loss 0.07  Precision 0.72  Recall 0.79  Accuracy 0.89  F1 0.75 
+[2022-03-05 04:47:51] Scheduling epoch 1
+[2022-03-05 04:47:51] Validation Results - Epoch : 10    Loss 0.08  Precision 0.73  Recall 0.78  Accuracy 0.90  F1 0.75 
+[2022-03-05 08:15:58] Scheduling epoch 1
+[2022-03-05 08:15:58] Validation Results - Epoch : 11    Loss 0.07  Precision 0.72  Recall 0.78  Accuracy 0.89  F1 0.75 
