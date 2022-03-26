@@ -7,11 +7,9 @@ To solve the two problems, we propose a embedding enhancement module and a durat
 ### Dataset and  source code
 We have released the data preparation process code in data folder. We will release the fully extracted feature as soon as posible. <br>
 In the data/choose_class folder, we release the code to choose events from Audioset.<br>
-<<<<<<< HEAD
 In the reference folder, we release the cliped reference audio from Audioset training set. The audio is too large, so that we will upload it using other methods in the future.<br>
 In the models folder, we release part of our training model, results, log... (Note that we find the model is large than 300M, so we will upload it to google drive.)
 In the src folder, we release the code of our work. <br>
-=======
 In the data/reference folder, we release the cliped reference audio from Audioset training set.<br>
 In the models folder, we release part of our training model. <br>
 In the src folder, we release the code. <br>
