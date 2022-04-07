@@ -1,5 +1,5 @@
 ## Introduction
-This is the source code of Radur. <br>
+This is the source code of Radur. the paper can be found on https://arxiv.org/pdf/2204.02143.pdf<br>
 In this work, we focus on Target Sound Detection task and evaluate on Audioset strongly labelled part.
 In previous work, we only evaluate our methods on URBAN-SED dataset, while URBAN-SED is a 10-catagories small dataset, so that it is hard to simulate real scene.
 The core idea of this work is to solve two import problems in TSD task. (1) The quality of reference audio is very important factor (2) The transient events (less than 1s) is hard to detect. <br>
