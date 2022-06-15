@@ -10,7 +10,7 @@ In the data/choose_class folder, we release the code to choose events from Audio
 In the reference folder, we release the cliped reference audio from Audioset training set. The audio is too large, so that we will upload it using other methods in the future.<br>
 In the models folder, we release part of our training model, results, log... (Note that we find the model is large than 300M, so we will upload it to google drive. https://drive.google.com/file/d/17QJHsStx3yehyg6axYn6bwU9UzFzGYCz/view?usp=sharing)
 In the src folder, we release the code of our work. <br>
-In the data/reference folder, we release the cliped reference audio from Audioset training set.<br>
+In the data/reference folder, we release the cliped reference audio from Audioset training set. The reference audio can be found on our google drive https://drive.google.com/file/d/1PwTDj0yIStc_NKPn9RxgZGsTOZ7kGjfA/view?usp=sharing <br>
 In the models folder, we release part of our training model. <br>
 In the src folder, we release the code. <br>
 Note that we find the reference audio is too large, so we cannot upload on github, we will upload it on google drive in the future.
